@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>IMC</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="animationHA">Calculadora IMC</h1>
+        <form action="">
+            <label for="nome">
+            <p class="animationHA">Nome :</p><input type="text" id="nome" name="nome">
+            </label>
+            
+            <div class="bg">
+            <label class="sex" for="genero"></label>
+                <label><p class="animationHA">Sexo :</p><input type="radio" name="genero" value="Feminino">Feminino</label>
+                <label><input type="radio" name="genero" value="Masculino">Masculino</label> 
+            </div>
+            
+            <label for="peso">
+            <p class="animationHA">Peso :</p><input type="number" id="peso" name="number">
+            </label>
+            <label for="altura">
+            <p class="animationHA">Altura :</p><input type="number" id="altura" name="number">
+            </label>
+        </form>
+        <br><button class="Well" onclick="calcularIMC()" id="olha">Mostrar Resultado</button>
+        <h3 id="saida"></h3>
+    </div>
+</body>
+</html>
